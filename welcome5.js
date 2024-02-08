@@ -11,10 +11,10 @@
         </div>
         <div style={{width: 64, flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', display: 'inline-flex'}}>
             <div style={{width: 42, height: 42, position: 'relative'}}>
-                <div style={{width: 10.52, height: 5.95, left: 15.56, top: 16.33, position: 'absolute', background: '#9609ED'}}></div>
-                <div style={{width: 33.21, height: 32.58, left: 4.39, top: 4.71, position: 'absolute', background: '#9609ED'}}></div>
+                <div style={{width: 10.52, height: 5.95, left: 15.56, top: 16.33, position: 'absolute', background: '#736D6D'}}></div>
+                <div style={{width: 33.21, height: 32.58, left: 4.39, top: 4.71, position: 'absolute', background: '#736D6D'}}></div>
             </div>
-            <div style={{color: '#9609ED', fontSize: 14, fontFamily: 'Glory', fontWeight: '600', wordWrap: 'break-word'}}>Accueil</div>
+            <div style={{color: '#736D6D', fontSize: 14, fontFamily: 'Glory', fontWeight: '400', wordWrap: 'break-word'}}>Accueil</div>
         </div>
         <div style={{flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', display: 'inline-flex'}}>
             <div style={{width: 39, height: 39, position: 'relative', transform: 'rotate(180deg)', transformOrigin: '0 0'}}>
@@ -28,45 +28,36 @@
         </div>
         <div style={{width: 64, flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', gap: 5, display: 'inline-flex'}}>
             <div style={{width: 33, height: 33, position: 'relative'}}>
-                <div style={{width: 22.81, height: 28.88, left: 5.10, top: 2.06, position: 'absolute', background: '#736D6D'}}></div>
+                <div style={{width: 22.81, height: 28.88, left: 5.10, top: 2.06, position: 'absolute', background: '#9609ED'}}></div>
             </div>
-            <div style={{color: '#736D6D', fontSize: 14, fontFamily: 'Glory', fontWeight: '400', wordWrap: 'break-word'}}>Mon compte</div>
+            <div style={{color: '#9609ED', fontSize: 14, fontFamily: 'Glory', fontWeight: '600', wordWrap: 'break-word'}}>Mon compte</div>
         </div>
-    </div>
-    <div style={{width: 313, left: 38, top: 148, position: 'absolute', justifyContent: 'center', alignItems: 'flex-start', gap: 106, display: 'inline-flex'}}>
-        <div style={{paddingLeft: 24, paddingRight: 24, paddingTop: 16, paddingBottom: 16, background: '#FEFEFF', borderRadius: 64, border: '1px #9609ED solid', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
-            <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
-                <div style={{color: '#9609ED', fontSize: 24, fontFamily: 'Glory', fontWeight: '600', wordWrap: 'break-word'}}>Passer</div>
-            </div>
-        </div>
-        <div style={{paddingLeft: 24, paddingRight: 24, paddingTop: 16, paddingBottom: 16, background: '#9609ED', borderRadius: 64, justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
-            <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
-                <div style={{color: '#FDF8F0', fontSize: 24, fontFamily: 'Glory', fontWeight: '600', wordWrap: 'break-word'}}>Suivant</div>
-            </div>
-        </div>
-    </div>
-    <div style={{width: 390, height: 384, left: -15, top: 293, position: 'absolute'}}>
-        <div style={{width: 390, height: 384, left: 0, top: 0, position: 'absolute', background: '#DDC2FF', borderRadius: 9999}} />
-        <div style={{width: 299, left: 59, top: 192, position: 'absolute'}}><span style="color: '#332002', fontSize: 20, fontFamily: 'Unkempt', fontWeight: '400', wordWrap: 'break-word'">En retournant à la niche (ou plutôt sur l’</span><span style="color: '#332002', fontSize: 20, fontFamily: 'Unkempt', fontWeight: '700', wordWrap: 'break-word'">Accueil</span><span style="color: '#332002', fontSize: 20, fontFamily: 'Unkempt', fontWeight: '400', wordWrap: 'break-word'"> !), tu y découvriras de nombreux conseils et diverses actualités en lien avec le monde animal.</span></div>
-    </div>
-    <div style={{width: 140, height: 140, left: 104, top: 338, position: 'absolute'}}>
-        <div style={{width: 94.44, height: 103.07, left: 22.78, top: 18.46, position: 'absolute', background: 'white'}}></div>
-        <div style={{width: 15.83, height: 3.28, left: 55.88, top: 103.91, position: 'absolute', background: 'white'}}></div>
-        <div style={{width: 15.57, height: 3.28, left: 71.13, top: 114.39, position: 'absolute', transform: 'rotate(-169.13deg)', transformOrigin: '0 0', background: 'white'}}></div>
-        <div style={{width: 4.38, height: 4.91, left: 53.72, top: 92.86, position: 'absolute', background: 'white'}}></div>
-        <div style={{width: 5.47, height: 6.01, left: 73.05, top: 31.36, position: 'absolute', background: 'white'}}></div>
-    </div>
-    <div style={{width: 390, height: 47, left: 0, top: 0, position: 'absolute'}}>
-        <div style={{width: 27.23, height: 13, left: 336.20, top: 19.10, position: 'absolute'}}>
-            <div style={{width: 25, height: 13, left: 0, top: 0, position: 'absolute', opacity: 0.35, borderRadius: 4.30, border: '1px black solid'}} />
-            <div style={{width: 1.33, height: 4, left: 25.90, top: 4.67, position: 'absolute', opacity: 0.40, background: 'black'}}></div>
-            <div style={{width: 21, height: 9, left: 2, top: 2, position: 'absolute', background: 'black', borderRadius: 2.50}} />
-        </div>
-        <img style={{width: 17.14, height: 12.10, left: 311.70, top: 19.70, position: 'absolute'}} src="https://via.placeholder.com/17x12" />
-        <img style={{width: 19.20, height: 12, left: 285, top: 19.60, position: 'absolute'}} src="https://via.placeholder.com/19x12" />
-        <div style={{left: 43.50, top: 16, position: 'absolute', textAlign: 'center', color: 'black', fontSize: 17, fontFamily: 'SF Pro', fontWeight: '590', wordWrap: 'break-word'}}>13:13</div>
     </div>
     <div style={{left: 79, top: 69, position: 'absolute', justifyContent: 'flex-start', alignItems: 'center', gap: 25, display: 'inline-flex'}}>
+        <div style={{width: 39, height: 39, position: 'relative'}}>
+            <div style={{width: 16.35, height: 14.01, left: 11.33, top: 16.58, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 14.01, height: 11.67, left: 12.50, top: 17.75, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 5.84, height: 7, left: 7.24, top: 13.08, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 3.50, height: 4.67, left: 8.41, top: 14.25, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 5.84, height: 7, left: 13.08, top: 8.41, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 3.50, height: 4.67, left: 14.25, top: 9.58, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 5.84, height: 7, left: 20.08, top: 8.41, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 3.50, height: 4.67, left: 21.25, top: 9.58, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 5.84, height: 7, left: 25.92, top: 13.08, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 3.50, height: 4.67, left: 27.09, top: 14.25, position: 'absolute', background: '#D9D9D9'}}></div>
+        </div>
+        <div style={{width: 39, height: 39, position: 'relative'}}>
+            <div style={{width: 16.35, height: 14.01, left: 11.33, top: 16.58, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 14.01, height: 11.67, left: 12.50, top: 17.75, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 5.84, height: 7, left: 7.24, top: 13.08, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 3.50, height: 4.67, left: 8.41, top: 14.25, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 5.84, height: 7, left: 13.08, top: 8.41, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 3.50, height: 4.67, left: 14.25, top: 9.58, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 5.84, height: 7, left: 20.08, top: 8.41, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 3.50, height: 4.67, left: 21.25, top: 9.58, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 5.84, height: 7, left: 25.92, top: 13.08, position: 'absolute', background: '#D9D9D9'}}></div>
+            <div style={{width: 3.50, height: 4.67, left: 27.09, top: 14.25, position: 'absolute', background: '#D9D9D9'}}></div>
+        </div>
         <div style={{width: 39, height: 39, position: 'relative'}}>
             <div style={{width: 16.35, height: 14.01, left: 11.33, top: 16.58, position: 'absolute', background: '#D9D9D9'}}></div>
             <div style={{width: 14.01, height: 11.67, left: 12.50, top: 17.75, position: 'absolute', background: '#D9D9D9'}}></div>
@@ -91,29 +82,33 @@
             <div style={{width: 5.84, height: 7, left: 25.92, top: 13.08, position: 'absolute', background: '#332002'}}></div>
             <div style={{width: 3.50, height: 4.67, left: 27.09, top: 14.25, position: 'absolute', background: '#332002'}}></div>
         </div>
-        <div style={{width: 39, height: 39, position: 'relative'}}>
-            <div style={{width: 16.35, height: 14.01, left: 11.33, top: 16.58, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 14.01, height: 11.67, left: 12.50, top: 17.75, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 5.84, height: 7, left: 7.24, top: 13.08, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 3.50, height: 4.67, left: 8.41, top: 14.25, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 5.84, height: 7, left: 13.08, top: 8.41, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 3.50, height: 4.67, left: 14.25, top: 9.58, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 5.84, height: 7, left: 20.08, top: 8.41, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 3.50, height: 4.67, left: 21.25, top: 9.58, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 5.84, height: 7, left: 25.92, top: 13.08, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 3.50, height: 4.67, left: 27.09, top: 14.25, position: 'absolute', background: '#D9D9D9'}}></div>
+    </div>
+    <div style={{left: 209, top: 148, position: 'absolute', justifyContent: 'center', alignItems: 'flex-start', gap: 65, display: 'inline-flex'}}>
+        <div style={{paddingLeft: 24, paddingRight: 24, paddingTop: 16, paddingBottom: 16, background: '#9609ED', borderRadius: 64, justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
+            <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
+                <div style={{color: '#FDF8F0', fontSize: 24, fontFamily: 'Glory', fontWeight: '600', wordWrap: 'break-word'}}>C’est parti !</div>
+            </div>
         </div>
-        <div style={{width: 39, height: 39, position: 'relative'}}>
-            <div style={{width: 16.35, height: 14.01, left: 11.33, top: 16.58, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 14.01, height: 11.67, left: 12.50, top: 17.75, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 5.84, height: 7, left: 7.24, top: 13.08, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 3.50, height: 4.67, left: 8.41, top: 14.25, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 5.84, height: 7, left: 13.08, top: 8.41, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 3.50, height: 4.67, left: 14.25, top: 9.58, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 5.84, height: 7, left: 20.08, top: 8.41, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 3.50, height: 4.67, left: 21.25, top: 9.58, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 5.84, height: 7, left: 25.92, top: 13.08, position: 'absolute', background: '#D9D9D9'}}></div>
-            <div style={{width: 3.50, height: 4.67, left: 27.09, top: 14.25, position: 'absolute', background: '#D9D9D9'}}></div>
+    </div>
+    <div style={{width: 390, height: 384, left: 54, top: 282, position: 'absolute'}}>
+        <div style={{width: 390, height: 384, left: 0, top: 0, position: 'absolute', background: '#DDC2FF', borderRadius: 9999}} />
+        <div style={{width: 258, left: 59, top: 97, position: 'absolute'}}><span style="color: '#332002', fontSize: 20, fontFamily: 'Unkempt', fontWeight: '400', wordWrap: 'break-word'">Enfin, dans </span><span style="color: '#332002', fontSize: 20, fontFamily: 'Unkempt', fontWeight: '700', wordWrap: 'break-word'">Mon compte</span><span style="color: '#332002', fontSize: 20, fontFamily: 'Unkempt', fontWeight: '400', wordWrap: 'break-word'">, tu pourras compléter et modifier tes infos personnelles.</span></div>
+    </div>
+    <div style={{width: 134, height: 134, left: 320, top: 474, position: 'absolute', transform: 'rotate(180deg)', transformOrigin: '0 0'}}>
+        <div style={{width: 90.39, height: 98.66, left: 21.80, top: 17.67, position: 'absolute', background: 'white'}}></div>
+        <div style={{width: 15.15, height: 3.14, left: 53.49, top: 99.45, position: 'absolute', background: 'white'}}></div>
+        <div style={{width: 14.90, height: 3.14, left: 68.08, top: 109.49, position: 'absolute', transform: 'rotate(-169.13deg)', transformOrigin: '0 0', background: 'white'}}></div>
+        <div style={{width: 4.19, height: 4.70, left: 51.42, top: 88.88, position: 'absolute', background: 'white'}}></div>
+        <div style={{width: 5.23, height: 5.75, left: 69.92, top: 30.01, position: 'absolute', background: 'white'}}></div>
+    </div>
+    <div style={{width: 390, height: 47, left: 0, top: 0, position: 'absolute'}}>
+        <div style={{width: 27.23, height: 13, left: 336.20, top: 19.10, position: 'absolute'}}>
+            <div style={{width: 25, height: 13, left: 0, top: 0, position: 'absolute', opacity: 0.35, borderRadius: 4.30, border: '1px black solid'}} />
+            <div style={{width: 1.33, height: 4, left: 25.90, top: 4.67, position: 'absolute', opacity: 0.40, background: 'black'}}></div>
+            <div style={{width: 21, height: 9, left: 2, top: 2, position: 'absolute', background: 'black', borderRadius: 2.50}} />
         </div>
+        <img style={{width: 17.14, height: 12.10, left: 311.70, top: 19.70, position: 'absolute'}} src="https://via.placeholder.com/17x12" />
+        <img style={{width: 19.20, height: 12, left: 285, top: 19.60, position: 'absolute'}} src="https://via.placeholder.com/19x12" />
+        <div style={{left: 43.50, top: 16, position: 'absolute', textAlign: 'center', color: 'black', fontSize: 17, fontFamily: 'SF Pro', fontWeight: '590', wordWrap: 'break-word'}}>13:13</div>
     </div>
 </div>
