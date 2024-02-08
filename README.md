@@ -55,3 +55,11 @@ welcome5.js
 
 ~
 
+Use Case diagram
+
+![Use_CaseReactNfinal drawio](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/256698bd-3c47-4899-9d54-7ca0201d653d)
+
+
+~
+
+
