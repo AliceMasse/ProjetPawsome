@@ -1,5 +1,12 @@
 # ProjetPetSitting
 
+Use Case diagram
+
+![Use_CaseReactNfinal drawio](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/256698bd-3c47-4899-9d54-7ca0201d653d)
+
+
+~
+
 accueil.js
 
 ![image](https://github.com/AliceMasse/ProjetPetSitting/assets/90843840/5c97ec98-250c-447f-ba45-5f1af72bf212)
@@ -55,11 +62,6 @@ welcome5.js
 
 ~
 
-Use Case diagram
 
-![Use_CaseReactNfinal drawio](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/256698bd-3c47-4899-9d54-7ca0201d653d)
-
-
-~
 
 
