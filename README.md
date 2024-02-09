@@ -19,7 +19,8 @@ Use Case diagram
 
 Entity–relationship model
 
-![MreactN drawio(1)](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/50c30669-636f-41a2-99d5-d159b2b1401d)
+
+![MreactN drawio(1) drawio](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/fa815c7c-73a4-4897-a82c-b8f39d5675db)
 
 
 ~
