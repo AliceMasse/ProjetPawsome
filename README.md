@@ -1,8 +1,25 @@
 # ProjetPetSitting
 
+
+
+Weekly Gantt Chart
+
+
+![Weekly Gantt Chart Pet_SittingApp](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/5815820d-06ca-4e88-ac82-67f8c0e315ae)
+
+~
+
 Use Case diagram
 
 ![Use_CaseReactNfinal drawio](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/256698bd-3c47-4899-9d54-7ca0201d653d)
+
+
+~
+
+
+Entity–relationship model
+
+![MreactN drawio(1)](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/50c30669-636f-41a2-99d5-d159b2b1401d)
 
 
 ~
