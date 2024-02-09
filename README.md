@@ -5,7 +5,8 @@
 Weekly Gantt Chart
 
 
-![Weekly Gantt Chart Planning Whiteboard in Yellow Green Pink Spaced Color Blocks Style](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/3a505a70-9235-488a-a583-ed792ddda510)
+
+![Weekly Gantt Chart Planning Whiteboard in Yellow Green Pink Spaced Color Blocks Style](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/dc72d76a-b113-4527-a9f8-d6ecd05538c1)
 
 
 ~
