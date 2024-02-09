@@ -5,7 +5,8 @@
 Weekly Gantt Chart
 
 
-![Weekly Gantt Chart Pet_SittingApp](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/5815820d-06ca-4e88-ac82-67f8c0e315ae)
+![Weekly Gantt Chart Planning Whiteboard in Yellow Green Pink Spaced Color Blocks Style](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/3a505a70-9235-488a-a583-ed792ddda510)
+
 
 ~
 
