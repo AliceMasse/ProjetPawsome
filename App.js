@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-import { View, Image, StyleSheet, TextInput, ImageBackground, Text, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // Importez useNavigation
+import { View, Image, Button, StyleSheet, TextInput, ImageBackground, Text, TouchableOpacity } from 'react-native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
 
-const LoginScreen = () => {
+const backgroundImage = require('./assets/image/background.png');
+const googleIcon = require('./assets/image/google.png');
+const facebookIcon = require('./assets/image/facebook.png');
+
+const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-
-  const navigation = useNavigation(); // Obtenez l'objet navigation
 
   const handleLogin = () => {
     if (!email || !password) {
@@ -21,7 +24,7 @@ const LoginScreen = () => {
   };
 
   const handleCreateAccount = () => {
-    navigation.navigate('Registration'); // Utilisez navigation.navigate pour rediriger vers Registration
+    navigation.navigate('Registration');
   };
 
   const isValidEmail = (email) => {
@@ -41,10 +44,6 @@ const LoginScreen = () => {
       <Text style={{ color: 'white', textAlign: 'center' }}>{title}</Text>
     </TouchableOpacity>
   );
-
-  const backgroundImage = require('./assets/image/background.png');
-  const googleIcon = require('./assets/image/google.png');
-  const facebookIcon = require('./assets/image/facebook.png');
 
   return (
     <ImageBackground source={backgroundImage} style={styles.backgroundImage}>
@@ -96,6 +95,8 @@ const Registration = () => (
   </View>
 );
 
+const Stack = createStackNavigator();
+
 const App = () => (
   <NavigationContainer>
     <Stack.Navigator initialRouteName="Login">
@@ -109,8 +110,10 @@ const App = () => (
   </NavigationContainer>
 );
 
-AppRegistry.registerComponent(appName, () => App);
 
+//////////////////////////////////////////////////////////////////////////////
+// STYLE // STYLE // STYLE //// STYLE // STYLE // STYLE //// STYLE // STYLE //
+//////////////////////////////////////////////////////////////////////////////
 
 const styles = StyleSheet.create({
   //Background
