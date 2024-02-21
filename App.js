@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, TextInput, Button, ImageBackground, Text, TouchableOpacity } from 'react-native';
+import { View, Image, StyleSheet, TextInput, ImageBackground, Text, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native'; // Importez useNavigation
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+
+  const navigation = useNavigation(); // Obtenez l'objet navigation
 
   const handleLogin = () => {
     if (!email || !password) {
@@ -12,30 +15,41 @@ const LoginScreen = () => {
     } else if (!isValidEmail(email)) {
       setError("Please check that the email is written correctly");
     } else {
-      // Effectuer la logique de connexion ici
+      // Perform login logic here
       alert('Logging in...');
     }
   };
 
+  const handleCreateAccount = () => {
+    navigation.navigate('Registration'); // Utilisez navigation.navigate pour rediriger vers Registration
+  };
+
   const isValidEmail = (email) => {
-    // Utilisez une expression régulière pour vérifier la syntaxe de l'email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-  const RoundedButton = ({ title, onPress }) => (
-    <TouchableOpacity style={styles.roundedButton} onPress={onPress}>
+  const RoundedButtonSmall = ({ title, onPress, icon }) => (
+    <TouchableOpacity style={styles.RoundedButtonSmall} onPress={onPress}>
+      <Image source={icon} style={styles.socialLoginIcon} />
+      <Text style={{ color: '#271300', textAlign: 'center' }}>{title}</Text>
+    </TouchableOpacity>
+  );
+
+  const RoundedButtonFull = ({ title, onPress }) => (
+    <TouchableOpacity style={styles.RoundedButtonFull} onPress={onPress}>
       <Text style={{ color: 'white', textAlign: 'center' }}>{title}</Text>
     </TouchableOpacity>
   );
 
   const backgroundImage = require('./assets/image/background.png');
+  const googleIcon = require('./assets/image/google.png');
+  const facebookIcon = require('./assets/image/facebook.png');
 
   return (
     <ImageBackground source={backgroundImage} style={styles.backgroundImage}>
       <View style={styles.container}>
         <View style={styles.formContainer}>
-
           <TextInput
             style={styles.input}
             placeholder="Email"
@@ -57,33 +71,49 @@ const LoginScreen = () => {
 
           {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
-          <RoundedButton title="Log In" onPress={handleLogin} />
-          <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
+          <Text style={[styles.forgotPasswordText, { textAlign: 'right' }]}>Forgot Password?</Text>
+          <RoundedButtonFull title="Log In" onPress={handleLogin} />
         </View>
 
         <View style={styles.socialLoginContainer}>
-          <RoundedButton title="Google" onPress={() => {}} />
-          <Text style={styles.socialLoginText}>   or   </Text>
-          <RoundedButton title="Facebook" onPress={() => {}} />
+          <RoundedButtonSmall title="Google" icon={googleIcon} onPress={() => {}} />
+          <Text style={styles.socialLoginText}>  or  </Text>
+          <RoundedButtonSmall title="Facebook" icon={facebookIcon} onPress={() => {}} />
         </View>
 
         <View style={styles.signupContainer}>
           <Text style={styles.signupText}>Not registered yet?</Text>
-          <RoundedButton title="Create Account" onPress={() => {}} />
+          <RoundedButtonFull title="Create Account" onPress={handleCreateAccount} />
         </View>
-
       </View>
     </ImageBackground>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+const Registration = () => (
+  <View>
+    <Text>Registration Screen</Text>
+  </View>
+);
 
+const App = () => (
+  <NavigationContainer>
+    <Stack.Navigator initialRouteName="Login">
+      <Stack.Screen
+        name="Login"
+        component={LoginScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen name="Registration" component={Registration} />
+    </Stack.Navigator>
+  </NavigationContainer>
+);
+
+AppRegistry.registerComponent(appName, () => App);
+
+
+const styles = StyleSheet.create({
+  //Background
   backgroundImage: {
     flex: 1,
     resizeMode: 'cover',
@@ -91,45 +121,89 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
+  // Input Container
+  formContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 480,
+  },
+
+  // Email & Mdp
   input: {
-    width: 300,
+    width: 360,
     height: 40,
     borderColor: '#332002',
-    backgroundColor: '#fcf9f7',
     color: '#332002',
     borderWidth: 1,
     padding: 10,
-    borderRadius: 20,
+    borderRadius: 10,
     marginBottom: 10,
   },
 
-  formContainer: {
-    marginTop: 450,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-
+  //Forgot Password ?
   forgotPasswordText: {
     textAlign: 'right',
     color: '#332002',
     fontSize: 12,
     marginTop: 10,
+    marginLeft: '67%',
   },
 
+  // Log In & Create Account Buttons
+  RoundedButtonFull: {
+    backgroundColor: '#992cf1',
+    borderRadius: 50,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginTop: 10,
+    textAlignVertical: 'center',
+    width: '100%',
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  // Google & Fb Container
   socialLoginContainer: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: 30,
+    marginTop: 60,
     alignItems: 'center',
+    justifyContent: 'left',
+    width: '90%',
   },
 
+  // Or
   socialLoginText: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#332002',
+    color: '#271300',
   },
 
+    // Google & Fb Buttons
+    RoundedButtonSmall: {
+      borderRadius: 50,
+      paddingHorizontal: 20,
+      paddingVertical: 10,
+      width: '45%',
+      height: 50,
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderWidth: 1,
+      borderColor: '#271300',
+      flexDirection: 'row',
+    },
+  
+    // Google & Fb Icon
+    socialLoginIcon: {
+      width: 20,
+      height: 20,
+      marginRight: 10,
+    },
+
+  //Big Container
   signupContainer: {
     flex: 1,
     justifyContent: 'center',
@@ -137,29 +211,21 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 
+  //Create Account
   signupText: {
     fontSize: 16,
     color: '#332002',
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: 2,
   },
 
-  roundedButton: {
-    backgroundColor: '#992cf1',
-    borderRadius: 50,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-  },
-
+  // Error message
   errorText: {
     color: '#ED2F2F',
     textAlign: 'center',
     marginBottom: 10,
     fontWeight: 'bold',
   },
-
 });
 
-
-
-export default LoginScreen;
+export default App;
