@@ -23,3 +23,12 @@ Entity–relationship model
 
 
 ![Untitled Diagram drawio(14)](https://github.com/AliceMasse/ProjetPawsome/assets/151831830/1a8275c9-2f98-4fe8-b6f8-b0aa9e364403)
+
+
+~
+
+
+Figma
+
+
+https://www.figma.com/file/f9YACx8q4hSjTx0AEYKYOT/Pawsome?type=design&node-id=163%3A20872&mode=design&t=vpbjVVUMzpOxXIxR-1
