@@ -8,10 +8,10 @@ const Onboarding1 = () => {
     setIsIntroSkip(false);
   };
 
-  const handleIntroNext = () => {
-    // Handle navigation to the next page here
-    console.log('Navigate to the next page');
-  };
+  // const handleIntroNext = () => {
+  //   // Handle navigation to the next page here
+  //   console.log('Navigate to the next page');
+  // };
 
   const RoundedButton = ({ title }) => (
     <TouchableOpacity style={styles.roundedButton}>
