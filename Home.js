@@ -3,6 +3,14 @@ import { StyleSheet, View, TextInput, Text, Image, TouchableOpacity, ScrollView 
 
 const Home = () => {
   const [search, setSearch] = useState('');
+  const [filteredArticles, setFilteredArticles] = useState([]);
+
+  const handleSearch = () => {
+    const filtered = articles.filter(article =>
+      article.title.toLowerCase().includes(search.toLowerCase())
+    );
+    setFilteredArticles(filtered);
+  };
 
   const articles = [
     {
@@ -179,30 +187,27 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: 18,
   }, 
 
   articleTextContainer: {
     flex: 1,
+    marginBottom:8,
   },
 
   articleExcerpt: {
-    fontSize: 14,
+    fontSize: 13,
     color: '#736D6D',
   },
   
   articleDate: {
-    fontSize: 12,
+    fontSize: 11,
     color: '#999',
-  },
-
-  articlePreview: {
-    marginRight: 15,
   },
 
   articleImage: {
     width: 100,
-    height: 100,
+    height: 88,
     borderRadius: 10,
     marginRight: 10,
   },
@@ -211,6 +216,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 8,
+    marginTop: 8,
   },
 
   themeGrid: {
@@ -226,7 +232,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: '2.3%',
-    marginVertical: '2.3%',
   },
 
   themeRow: {
@@ -237,7 +242,8 @@ const styles = StyleSheet.create({
 
   themeImage: {
     width: 80,
-    height: 80,    
+    height: 80,
+    borderRadius: 10,   
   },
 
   tabs: {
@@ -256,6 +262,7 @@ const styles = StyleSheet.create({
   tab: {
     justifyContent: 'center',
     alignItems: 'center',
+    
   },
 
   articleContainer: {
