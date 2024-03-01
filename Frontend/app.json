@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "pawsome",
+    "slug": "pawsome",
+    "version": "1.0.0",
+    "projectNameForProxy": "@owner/pawsome",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "pawsome"
+}
